@@ -35,3 +35,10 @@ Promise.all([p1,p2,p3]).then(res => {
 Promise.race([p1,p2,p3]).then(res => {
   console.log(res)
 })
+
+Promise.all([]).then(res => {
+  console.log(res)
+})
+Promise.race([]).then(res => {
+  console.log(res)
+})
